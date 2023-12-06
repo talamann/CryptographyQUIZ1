@@ -31,7 +31,7 @@ def lattable(sbox,degree):
         for j in range(16):
             table[i][j] = calculatelat(i,j,sbox) - 2**(degree-1)
     return table
-print("0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15")
+print("0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15") # write a loop to generate a list from 0 to 2^n i was just lazy to write it
 count = 0
 for row in lattable(s_box,4):
 
